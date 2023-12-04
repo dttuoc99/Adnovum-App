@@ -36,7 +36,6 @@ function HomePage() {
                 </table>
 
             </div>
-            <h1>HomePage</h1>
         </div>
     )
 }
