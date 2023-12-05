@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../static/img/Logo.png";
-
-function Navbar(){
+import { Nav } from 'react-bootstrap'
+function Navbar() {
     return (
         <div className="header-bar">
             <div className="logo-nav">
@@ -12,14 +12,13 @@ function Navbar(){
                     Adnovum User Service
                 </a>
             </div>
-            <div class="dropdown">
-                <button class="btn-logout dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    User
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><a class="dropdown-item" href="/">Logout</a></li>
-                </ul>
+            <div className="logout-button">
+                <a href="https://operation-diet-coke-delta-squad/testauth/?logout" >
+                    <button type="button" class="btn btn-outline-light" >
+                        LogOut
+                    </button>
+                </a>
+
             </div>
         </div>
     );
